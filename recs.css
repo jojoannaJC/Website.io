@@ -1,0 +1,56 @@
+/*scroll images cuz it looks so good*/
+
+.scroll-images{
+    background-color: #ddd;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.div.scroll-images img{
+    padding: 10px;
+}
+
+/*adding different gradient sections for each genre*/
+#section1 {
+background: linear-gradient(55deg, #0fcec1 0%, #1fc8db 51%, #27c5fe 85%);
+}
+
+#section2 {
+background: linear-gradient(55deg, #ff7e5f 0%, #feb47b 51%, #ff6a00 85%);
+}
+
+#section3 {
+background: linear-gradient(55deg, #a548f8 0%, #7634f9 51%, #54b5c4 85%);
+}
+
+/*styling h2*/
+.section h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    border: 2px solid #000; 
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+/*back to top button for scrolling up*/
+#back-to-top{
+    position: fixed;
+    display: none;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #3d3d3d;
+    color:azure;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#back-to-top:hover{
+    background-color: #cccccc;
+}

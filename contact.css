@@ -1,0 +1,98 @@
+/* Background image container */
+.bg-img {
+    /* The image used */
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 200vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Form container */
+.container {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.73); /* Semi-transparent white background */
+    border-radius: 10px;
+}
+
+/* Input fields and textarea */
+input[type=text], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 9px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button */
+.btn {
+    background-color: #04AA6D; /* Change to your desired button color */
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #3e8e41; /* Change to your desired hover color */
+}
+
+/* Adjustments for mobile devices */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+  
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*moving bg at the back for appeal*/
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.move-images{
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.figure{
+    display: flex;
+    animation: slider 60s linear infinite;
+}
+
+.figure img {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 600px;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(calc(-400px * 23));
+    }
+    }
