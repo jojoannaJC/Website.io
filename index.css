@@ -84,7 +84,7 @@ body, html{
     color: black;
   }
   
-/*adding dropdown content for less pages in navbar*/   
+/*styling dropdown content in navbar*/   
 .dropdown-content {
     display: none;
     position: absolute;
@@ -142,15 +142,4 @@ body, html{
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
-}
-
-/*footer*/
-.footer{
-  background-color: aqua;
-  text-align: center;
-}
-
-.footer p{
-  text-align: center;
-  font-weight: bold;
 }
